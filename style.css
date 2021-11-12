@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("https://wallpaperaccess.com/full/1122002.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+label{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: inherit;
+}
+
+input {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    visibility: hidden;
+    z-index: 5;
+}
+
+nav#menusao {
+    width: 5rem;
+    height: 31rem;
+    margin-left: 1rem;
+    top: 2rem;
+    display: inline-block;
+    position: fixed;
+    z-index: 5;
+}
+
+nav ol.menu {
+    position: inherit;
+    width: 4.8rem;
+    height: 28rem;
+    padding-top: 5rem;
+    list-style: none;
+    opacity: 0.3;
+    z-index: 5;
+}
+
+nav ol div.fundo {
+    width: 5rem;
+    height: 5.5rem;
+    position: fixed;
+    border: 0.1rem solid black;
+    margin-left: -0.1rem;
+    visibility: hidden;
+    margin-top: -5.3rem;
+    border-radius: 3rem;
+    z-index: 1;
+    transition: ease 2s;
+}
+
+nav ol div.fakebutton {
+    width:4.3rem;
+    height: 4.3rem;
+    margin-left: 0.25rem;
+    border-radius: 3rem;
+    border: 0.1rem solid black;
+    background-color: white;
+    position: absolute;
+    top: 0.3rem;
+    opacity: 0.5;
+    z-index: 5;
+}
+
+input#check:checked ~ div.fundo {
+    height: 31rem;
+}
+
+input#option1a:checked ~ ul,
+input#option2b:checked ~ ul,
+input#option3c:checked ~ ul, 
+input#option4d:checked ~ ul,
+input#option5e:checked ~ ul {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0,5s;
+}
+
+nav ol li.optiona,
+nav ol li.optionb,
+nav ol li.optionc,
+nav ol li.optiond,
+nav ol li.optione {
+    position: absolute;
+    margin-top: -4.6rem;
+    width: 4.3rem;
+    height: 4.3rem;
+    margin-left: 0.25rem;
+    border: 0.1rem solid black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3rem;
+    transition: linear 0.7s;
+    z-index: 1;
+}
+
+input#check:checked ~ li.optiona {
+    margin-top: 1rem;
+    transition-delay: 1s;
+    opacity: 0.3;
+}
+
+input#check:checked ~ li.optionb {
+    margin-top: 6rem;
+    transition-delay: 0.8s;
+    opacity: 0.3;
+}
+
+input#check:checked ~ li.optionc {
+    margin-top: 11rem;
+    transition-delay: 0.6s;
+    opacity: 0.3;
+}
+
+input#check:checked ~ li.optiond {
+    margin-top: 16rem;
+    transition-delay: 0.4s;
+    opacity: 0.3;
+}
+
+input#check:checked ~ li.optione {
+    margin-top: 21rem;
+    transition-delay: 0.2s;
+    opacity: 0.3;
+}
+
+
+nav ol li ol {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 0.25rem solid rgb(0, 0, 0);
+    border-radius: inherit;
+    background-color: rgb(255, 255, 255) transparent;
+    backdrop-filter: blur(8px);
+    margin-left: 0.15rem;
+    margin-top: 0.15rem;
+    list-style: none;
+    z-index: 1;
+}
+
+
+nav ol li ol ul.a1,
+nav ol li ol ul.a2,
+nav ol li ol ul.a3,
+nav ol li ol ul.a4,
+nav ol li ol ul.a5,
+nav ol li ol ul.b1,
+nav ol li ol ul.b2,
+nav ol li ol ul.b3,
+nav ol li ol ul.b4,
+nav ol li ol ul.b5,
+nav ol li ol ul.c1,
+nav ol li ol ul.c2,
+nav ol li ol ul.c3,
+nav ol li ol ul.c4,
+nav ol li ol ul.c5,
+nav ol li ol ul.d1,
+nav ol li ol ul.d2,
+nav ol li ol ul.d3,
+nav ol li ol ul.d4,
+nav ol li ol ul.d5,
+nav ol li ol ul.e1,
+nav ol li ol ul.e2,
+nav ol li ol ul.e3,
+nav ol li ol ul.e4,
+nav ol li ol ul.e5 {
+    position: relative;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    left: 5.3rem;
+    bottom: 3.8rem;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgb(255, 255, 255) /*transparent*/;
+    /*backdrop-filter: blur(8px);*/
+    border: 0.1rem solid black;
+    list-style: none;
+    transition: 0.2s linear;
+    z-index: 2;
+}
+
+nav ol li ol ul li {
+    width: 8rem;
+    height: 2rem;
+    border-radius: inherit;
+    position: relative;
+    border: inherit;
+    visibility: hidden;
+    background-color: rgb(255, 255, 255) /*transparent*/;
+    /*backdrop-filter: blur(8px);*/
+    bottom: 2.3rem;
+    left: 9rem ;
+    z-index: 3;
+}
+
+nav ol li.optiona ol ul:hover li,
+nav ol li.optiona ol ul li:hover,
+nav ol li.optionb ol ul:hover li,
+nav ol li.optionb ol ul li:hover,
+nav ol li.optionc ol ul:hover li,
+nav ol li.optionc ol ul li:hover,
+nav ol li.optiond ol ul:hover li,
+nav ol li.optiond ol ul li:hover,
+nav ol li.optione ol ul:hover li,
+nav ol li.optione ol ul li:hover{
+    visibility: visible;
+}
+
+
+div.fakebutton:hover {
+    opacity: 1;
+}
+
